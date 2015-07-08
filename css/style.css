@@ -2408,3 +2408,6 @@ footer span {
   padding:0;
   text-decoration:underline;
 }
+.pace-running .content {
+  display: none;
+}
