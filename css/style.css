@@ -158,6 +158,22 @@ header {
   padding: 0 0 54px 0;
   margin-bottom:0;
 }
+
+.logo_box h4.user-pref{
+	font: 26px/1em 'Questrial';
+  color: #8C6996;
+  letter-spacing: 1px;
+  padding:0;
+  margin-bottom:0;
+  font-weight:bold;
+}
+.logo_box h5{
+	font: 18px/1em 'Questrial';
+  color: #8C6996;
+  letter-spacing: 1px;
+  padding: 0;
+  margin-bottom:0;
+}
 .follow_icon {
 	padding: 20px 0 0 0;
 	margin: 0;
