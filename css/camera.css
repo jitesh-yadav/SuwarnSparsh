@@ -81,6 +81,8 @@
   max-width: none !important;
   width:100% !important;
   height:auto !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 .camera_wrap .camera_fakehover {
   height: 100%;
