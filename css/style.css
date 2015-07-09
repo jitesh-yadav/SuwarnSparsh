@@ -162,7 +162,6 @@ header {
 	padding: 20px 0 0 0;
 	margin: 0;
 	list-style: none;
-	float: left;
 	overflow: hidden;
 }
 .follow_icon li:first-child {
