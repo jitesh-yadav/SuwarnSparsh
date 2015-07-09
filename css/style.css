@@ -159,15 +159,11 @@ header {
   margin-bottom:0;
 }
 .follow_icon {
-	padding: 20px 0 0 22px;
+	padding: 20px 0 0 0;
 	margin: 0;
 	list-style: none;
 	float: left;
 	overflow: hidden;
-}
-.follow_icon li {
-	float: left;
-	margin-left: 14px;
 }
 .follow_icon li:first-child {
 	margin-left: 0;
