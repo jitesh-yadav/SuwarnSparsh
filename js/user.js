@@ -1,3 +1,6 @@
+//Hide video chat div initially
+$('.fluidMedia').hide();
+
 //Date-time picker
 $(function () {
     $('#datetimepicker1').datetimepicker();
@@ -45,6 +48,21 @@ $(document).ready(function() {
 		]
 	});
 	
+	//$.get("https://service.xirsys.com/ice",
+//		{
+//			ident: "yadavjitesh",
+//			secret: "89022dd2-2621-11e5-bbf5-27f100a408be",
+//			domain: "film-maker-independent.org",
+//			application: "default",
+//			room: "default",
+//			secure: 1
+//		},
+//		function(data, status) {
+//			alert("Data: " + data + "nnStatus: " + status);
+//			console.log("Data: " + data + "nnStatus: " + status);
+//		}
+//	);
+	
 });
 
 $('#userName').html(localStorage.getItem('username'));
@@ -52,4 +70,14 @@ $('#userName').html(localStorage.getItem('username'));
 $('#logout').click(function(){
 	localStorage.removeItem('username');
 	window.location.href = "index.html";
-})
+});
+
+$('#startVideoChat').click(function() {
+	$('.fluidMedia').show();
+	$('#chatIframe').attr('src','https://beta.talky.io/SuwarnSparshConsultant');
+	var $anchor = $(this);
+	$('html, body').stop().animate({
+		scrollTop: $($anchor.attr('href')).offset().top
+	}, 1500, 'easeInOutExpo');
+	event.preventDefault();
+});
