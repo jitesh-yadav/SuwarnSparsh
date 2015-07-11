@@ -1,3 +1,6 @@
+//Hide video chat div initially
+$('.fluidMedia').hide();
+
 //Calender for showing appointments
 $(document).ready(function() {	
 	$('#calendar').fullCalendar({
@@ -49,3 +52,13 @@ $('#logout').click(function(){
 	localStorage.removeItem('consultantname');
 	window.location.href = "index.html";
 })
+
+$('#startVideoChat').click(function() {
+	$('.fluidMedia').show();
+	$('#chatIframe').attr('src','https://beta.talky.io/SuwarnSparshConsultant');
+	var $anchor = $(this);
+	$('html, body').stop().animate({
+		scrollTop: $($anchor.attr('href')).offset().top
+	}, 1500, 'easeInOutExpo');
+	event.preventDefault();
+});
